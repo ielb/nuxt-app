@@ -17,7 +17,7 @@ pipeline {
       steps {
         sh '''echo "Restarting All "
 
-sudo pm2 restart all
+pm2 restart all
 
 echo "All restarted"'''
       }

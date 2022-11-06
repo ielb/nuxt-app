@@ -15,7 +15,11 @@ pipeline {
 
     stage('Run') {
       steps {
-        sh 'pm2 start .output/server/index.mjs --name frontend'
+        sh '''echo "Restarting All "
+
+sudo pm2 restart all
+
+echo "All restarted"'''
       }
     }
 

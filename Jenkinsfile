@@ -7,9 +7,9 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
-        sh 'npm run build'
+        sh 'npm i && npm run build'
       }
     }
 

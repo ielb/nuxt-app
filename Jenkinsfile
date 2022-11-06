@@ -15,7 +15,7 @@ pipeline {
 
     stage('Run') {
       steps {
-        sh 'npm run preview'
+        sh 'pm2 start .output/server/index.mjs --name frontend'
       }
     }
 
